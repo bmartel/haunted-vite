@@ -5,7 +5,7 @@ Simple, yet complete setup for building apps with Web Components.
 ## Features
 
 - [Vite](https://vitejs.dev) with [Haunted](https://hauntedhooks.netlify.app/), [TypeScript](https://www.typescriptlang.org) and [absolute imports](https://github.com/aleclarson/vite-tsconfig-paths).
-- [Tailwind CSS v3](https://tailwindcss.com) with a [basic reset for form styles](https://github.com/tailwindlabs/tailwindcss-forms) and a [Prettier plugin](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) that automatically sorts classes.
+- [OpenProps](https://github.com/argyleink/open-props) to aid in styling web components with css variables.
 - Use [ESLint](https://eslint.org) and [Prettier](https://prettier.io) on VSCode and before you commit with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged).
 - [PWA](https://github.com/antfu/vite-plugin-pwa) enabled.
 - Write unit and integration tests with [@open-wc/testing](https://open-wc.org/docs/testing/testing-package/) and [@web/test-runner](https://www.npmjs.com/package/@web/test-runner).
