@@ -1,1 +1,1 @@
-import './elements/app-root';
+import './app-root';

@@ -4,6 +4,20 @@ import { VitePWA } from 'vite-plugin-pwa'
 // https://vitejs.dev/config/
 export default defineConfig({
   base: './',
+  ...(process.env.NODE_ENV === 'production'
+    ? null
+    : {
+        build: {
+          rollupOptions: {
+            output: {
+              format: 'cjs',
+              entryFileNames: `assets/[name].js`,
+              chunkFileNames: `assets/[name].js`,
+              assetFileNames: `assets/[name].[ext]`,
+            },
+          },
+        },
+      }),
   plugins: [
     VitePWA({
       registerType: 'autoUpdate',

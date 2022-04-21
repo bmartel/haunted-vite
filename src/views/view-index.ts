@@ -13,7 +13,7 @@ function ViewIndex() {
       }
     </style>
 
-    <div>Vite + Haunted</div>
+    <h1 id="title">Vite + Haunted</h1>
   `
 }
 
