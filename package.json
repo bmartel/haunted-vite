@@ -24,7 +24,7 @@
   "dependencies": {
     "@martel/haunted-router": "^0.3.1",
     "haunted": "^4.8.3",
-    "lit-html": "^2.2.2"
+    "lit-html": "^1.0.0"
   },
   "devDependencies": {
     "@esm-bundle/chai": "^4.3.4-fix.0",
