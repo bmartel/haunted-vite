@@ -22,7 +22,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@martel/haunted-router": "^0.3.1",
+    "@martel/haunted-router": "^0.4.0",
     "haunted": "^4.8.3",
     "lit-html": "^1.0.0"
   },

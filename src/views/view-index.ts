@@ -1,5 +1,7 @@
 import { html, component } from 'haunted'
 
+export type ViewIndexProps = Record<string, never>
+
 function ViewIndex() {
   return html`
     <style>
@@ -15,4 +17,4 @@ function ViewIndex() {
   `
 }
 
-customElements.define('view-index', component<any>(ViewIndex))
+customElements.define('view-index', component<ViewIndexProps & HTMLElement>(ViewIndex))

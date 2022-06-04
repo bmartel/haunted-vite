@@ -1,6 +1,5 @@
-// import { navigateTo } from '@martel/haunted-router'
+import '@martel/haunted-router'
 import { html } from 'haunted'
-import './hooks/route'
 
 enum RouteMode {
   Any = 'any',

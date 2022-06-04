@@ -25,4 +25,4 @@ function App({ title: _title }: AppProps) {
   `
 }
 
-customElements.define('app-root', component<any>(App, { observedAttributes: ['title'] }))
+customElements.define('app-root', component<AppProps & HTMLElement>(App, { observedAttributes: ['title'] }))
