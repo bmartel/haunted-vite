@@ -17,8 +17,8 @@
     "preview": "vite preview",
     "lint": "eslint --fix src",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\"",
-    "test": "web-test-runner \"src/**/*.spec.ts\" --node-resolve",
-    "test:watch": "web-test-runner \"src/**/*.spec.ts\" --node-resolve --watch",
+    "test": "web-test-runner \"src/**/*.spec.ts\" --node-resolve --playwright --browsers chromium",
+    "test:watch": "web-test-runner \"src/**/*.spec.ts\" --node-resolve --playwright --browsers chromium --watch",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -32,6 +32,7 @@
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@web/dev-server-esbuild": "^0.2.14",
     "@web/test-runner": "^0.13.18",
+    "@web/test-runner-playwright": "^0.8.9",
     "eslint": "^8.13.0",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^7.0.4",
