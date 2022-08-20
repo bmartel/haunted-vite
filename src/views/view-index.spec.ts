@@ -8,6 +8,8 @@ describe(TAG, async () => {
   it('displays banner text', async () => {
     const el = await fixture(`<view-index></view-index>`)
 
-    expect(el?.shadowRoot?.getElementById('title')?.innerText).to.equal('Vite + Haunted')
+    expect(el?.shadowRoot?.querySelector('text-heading')?.shadowRoot?.getElementById('title')?.innerText).to.equal(
+      'Vite + Haunted',
+    )
   })
 })
